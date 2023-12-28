@@ -52,6 +52,8 @@ jobs:
       needs: build
       steps: 
 
+      - uses: actions/checkout@v3
+      
       - name: Deploy Minikube
         run: |
           kubectl apply -f deployment.yml
