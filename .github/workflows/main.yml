@@ -34,7 +34,7 @@ jobs:
 
       - name: Copy JAR
         run: |
-          cp $GITHUB_WORKSPACE/build/libs/spring-petclinic-2.6.0.jar
+          cp $GITHUB_WORKSPACE/build/libs/spring-petclinic-2.6.0.jar .
           chmod 777 spring-petclinic-2.6.0.jar
           ls -lt
 
