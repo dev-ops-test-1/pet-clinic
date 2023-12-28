@@ -40,7 +40,7 @@ jobs:
 
       - name: Docker Build
         run: |
-          docker build --tag dev-ops-test-1/pet-clinic .
+          docker build --tag inventore/pet-clinic .
           docker images
 
       - name: Docker Push
