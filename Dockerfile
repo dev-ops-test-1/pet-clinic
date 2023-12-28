@@ -5,7 +5,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy the application JAR file into the container at /app
-COPY target/spring-petclinic-2.6.0.jar /app/
+COPY spring-petclinic-2.6.0.jar /app/
 
 # Specify the command to run on container start
 CMD ["java", "-jar", "pet-clinic.jar"]
