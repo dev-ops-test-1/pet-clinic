@@ -1,18 +1,20 @@
-name: CIon:
+name: CI
+
+on:
   
- push:
-  branches: [ "main" ]
- pull_request:
-  branches: [ "main" ]  
- workflow_dispatch:jobs:
+  push:
+  workflow_dispatch:
+
+jobs:
   
- build:
-   
-  runs-on: ubuntu-latest  
-  steps:
-   
-   - uses: actions/checkout@v3   # Runs a set of commands using the runners shell
-   - name: Run a multi-line script
-    run: |
-     echo Add other actions to build,
-     echo test, and deploy your project.
+  build:
+    
+    runs-on: ubuntu-latest
+
+    steps:
+    
+      - uses: actions/checkout@v3
+
+      - name: Run a multi-line script
+        run: |
+          echo "hola mundo"
