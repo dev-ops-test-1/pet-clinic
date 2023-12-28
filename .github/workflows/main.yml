@@ -45,7 +45,7 @@ jobs:
 
       - name: Docker Push
         run: |
-          docker push dev-ops-test-1/pet-clinic
+          docker push inventore/pet-clinic
 
   deploy:
       runs-on: self-hosted
