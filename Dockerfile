@@ -8,4 +8,4 @@ WORKDIR /app
 COPY spring-petclinic-2.6.0.jar /app/
 
 # Specify the command to run on container start
-CMD ["java", "-jar", "pet-clinic.jar"]
+CMD ["java", "-jar", "spring-petclinic-2.6.0.jar"]
