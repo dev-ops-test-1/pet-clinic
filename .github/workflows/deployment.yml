@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: pet-clinic
-        image: dev-ops-test-1/pet-clinic:latest
+        image: inventore/pet-clinic:latest
         ports:
         - containerPort: 8085
